@@ -171,7 +171,7 @@ contract("FLIGHT SURETY TESTS", async (accounts) => {
     /* REGISTER FLIGHT */
     it("PARTICIPANT AIRLINES CAN REGISTER NEW FLIGHTS", async () => {
         let airlineAddress2 = accounts[2];
-        let flight  = "ND1309";
+        let flight  = "NZ123";
         let day = 10;
         let month = 10;
         let year = 2030;

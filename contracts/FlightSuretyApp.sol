@@ -383,9 +383,9 @@ contract FlightSuretyApp {
 
     }
 
-    function checkPassengerInsurances() public view requireIsOperational() returns(bytes32[] memory) {
-        return flightSuretyData.checkPassengerInsurances(msg.sender);
-    }
+    // function checkPassengerInsurances() public view requireIsOperational() returns(bytes32[] memory) {
+    //     return flightSuretyData.checkPassengerInsurances(msg.sender);
+    // }
 
     function checkInsuranceAmountPaid(uint _flightId) public view requireIsOperational() returns(uint) {
         bytes32 _flightKey = flightsReverse[_flightId];
@@ -581,7 +581,7 @@ contract FlightSuretyData {
     function checkInsurances(uint _insuranceId) external view
     returns(bytes32 insuranceKey_, bytes32 flightKey_, address passengerAddress_, uint amountPaid_, uint amountAvailable_, bool claimable_, bool active_) {}
 
-    function checkPassengerInsurances(address _passengerAddress) external view returns(bytes32[] memory) {}
+    // function checkPassengerInsurances(address _passengerAddress) external view returns(bytes32[] memory) {}
 
     function checkInsuranceAmountPaid(address _passengerAddress, bytes32 _flightKey) external view returns(uint amountPaid_) {}
 
