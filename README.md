@@ -4,8 +4,7 @@ Flight delay is a parametric insurance product:
  - The full process is automated, there is no middle man interaction.
 
 # Project Specification
-SEPARATION OF CONCERNS, OPERATIONAL CONTROL AND “FAIL FAST”
-Smart Contract code is separated into multiple contracts:
+SMART CONTRACT CODE IS SEPARATED INTO MULTIPLE CONTRACTS:
 1) FlightSuretyData.sol for data persistence
 2) FlightSuretyApp.sol for app logic and oracles code
 
